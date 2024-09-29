@@ -1,0 +1,36 @@
+print("----------Invetaris Lab Manajemen Informatika (Lab MI)------------")
+
+class DataBarang:
+    def __init__(self, nama_barang, kode_barang, jumlah_barang, kondisi_barang):
+        self.nama_barang = nama_barang
+        self.kode_barang = kode_barang 
+        self.jumlah_barang = jumlah_barang
+        self.kondisi_barang = kondisi_barang
+
+    def start(self):
+        print(f'nama_barang = {self.nama_barang}')
+        print(f'kode_barang = {self.kode_barang}')
+        print(f'jumlah_barang = {self.jumlah_barang}')
+        print(f'kondisi_barang = {self.kondisi_barang}')
+
+DataBarang1 = DataBarang(
+    nama_barang = "Komputer",
+    kode_barang = "KB001",
+    jumlah_barang = "40",
+    kondisi_barang = "Baik")
+
+DataBarang2 = DataBarang(
+    nama_barang = "Proyektor",
+    kode_barang = "PJ002",
+    jumlah_barang = "1",
+    kondisi_barang = "Rusak")
+
+DataBarang3 = DataBarang(
+    nama_barang = "Meja",
+    kode_barang = "MJ003",
+    jumlah_barang = "55",
+    kondisi_barang = "Baik")
+
+DataBarang1.start()
+DataBarang2.start()
+DataBarang3.start()
