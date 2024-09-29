@@ -1,5 +1,5 @@
 class DataDiri:
-    def _init_(self, nama, kelas, nim, jurusan, fakultas, kampus, negara):
+    def __init__(self, nama, kelas, nim, jurusan, fakultas, kampus, negara):
         self.nama = nama
         self.kelas = kelas 
         self.nim = nim
@@ -9,15 +9,10 @@ class DataDiri:
         self.negara = negara
 
     def start(self):
-        print(f'The {self.nama} {self.kelas} {self.nim} {self.jurusan} {self.fakultas} {self.kampus} {self.negara} is starting.')
-
-    def stop(self):
-        print(f'The {self.nama} {self.kelas} {self.nim} {self.jurusan} {self.fakultas} {self.kampus} {self.negara} has stopped.')
+        print(f' {self.nama} {self.kelas} {self.nim} {self.jurusan} {self.fakultas} {self.kampus} {self.negara}.')
 
 my_DataDiri = DataDiri("Fiana", "2023D", "100", "MI", "Vokasi", "Unesa", "Indonesia")
-DataDiri1 = DataDiri("Zea", "2024D", "200", "Tabus", "Vokasi", "Unesa", "Indonesia")
+DataDiri1 = DataDiri("Agta", "2024D", "200", "Tabus", "Vokasi", "Unesa", "Indonesia")
 
 DataDiri1.start()
-DataDiri1.stop()
 my_DataDiri.start()
-my_DataDiri.stop()
