@@ -1,7 +1,7 @@
 import turtle
 
 class MyTurtle:
-    def _init_(self, color, shape):
+    def __init__(self, color, shape):
         # Membuat objek turtle
             self.t = turtle.Turtle() # Object dari class Turtle
             self.t.color(color) # Mengatur warna turtle
@@ -11,25 +11,25 @@ class MyTurtle:
           # Method untuk menggerakkan turtle maju
           self.t.forward(jarak)
 
-    def putar_kanan(self, sudut):
-          # Method untuk memutar turtle ke kanan
-          self.t.right(sudut)
+    def putar_kiri(self, sudut):
+          # Method untuk memutar turtle ke kiri
+          self.t.left(sudut)
 
-    def buat_persegi(self, ukuran):
-          # Method untuk menggambar persegi
+    def buat_segitiga(self, ukuran):
+          # Method untuk menggambar segitiga
           for _ in range(3):
                 self.maju(ukuran)
-                self.putar_kanan(120) # Sudut 90 derajat untuk persegi
+                self.putar_kiri(120) # Sudut 120 derajat untuk segitiga
 
     def selesai(self):
           # Method untuk menyelesaikan gambar
           turtle.done()
 
 # Membuat objek turtle dengan warna dan bentuk
-turtle1 = MyTurtle("purple", "turtle")
+turtle1 = MyTurtle("blue", "turtle")
 
-#Menggambar persegi dengan ukuran sisi 150
-turtle1.buat_persegi(150)
+#Menggambar segitiga dengan ukuran sisi 120
+turtle1.buat_segitiga(350)
 
 # Menyelesaikan gambar
 turtle1.selesai()
